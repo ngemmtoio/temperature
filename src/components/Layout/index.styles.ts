@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export let Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
   min-width: 350px;
   min-height: 500px;
   background-color: #213547;
