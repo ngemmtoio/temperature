@@ -1,8 +1,17 @@
 import { Display } from '../Display';
-import { Wrapper } from './index.styles';
+import { NumericOperation } from '../NumericOperation';
+import { Wrapper, WrapperButtons } from './index.styles';
 
 interface ILayout {}
 
 export function Layout() {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <Display temperature={0}></Display>
+      <WrapperButtons>
+        <NumericOperation sign="-" />
+        <NumericOperation sign="+" />
+      </WrapperButtons>
+    </Wrapper>
+  );
 }

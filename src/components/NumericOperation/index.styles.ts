@@ -7,4 +7,5 @@ export let Button = styled.div`
   background-color: gray;
   color: white;
   font-size: 60px;
+  cursor: pointer;
 `;
