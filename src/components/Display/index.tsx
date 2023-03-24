@@ -6,7 +6,7 @@ interface IDisplay {
 
 export function Display({ temperature }: IDisplay) {
   return (
-    <Wrapper>
+    <Wrapper temperature={temperature}>
       <Text>{temperature}°C</Text>
     </Wrapper>
   );
